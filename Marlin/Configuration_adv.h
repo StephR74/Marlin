@@ -19,19 +19,19 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
- 
+
  /**
  * JGAurora A5X 3D Printer Firmware v1.1.9
- * Based on v1.1.6 Configuration.h file by: Stéphane RAPIN
+ * Based on v1.1.6 Configuration_adv.h file by: Stéphane RAPIN
  * <https://github.com/StephR74/Marlin-v1.1.9-A5X/>
  *
- * This configuration of Marlin was created by the community for the 
+ * This configuration of Marlin was created by the community for the
  * JGAurora A5X 3D printer community. A BIG thanks to the Marlin developers
  * (Scott & Co) for all their continual hard work!
  * Enjoy, and happy printing! :)
  *
  */
- 
+
 /**
  * Configuration_adv.h
  *
