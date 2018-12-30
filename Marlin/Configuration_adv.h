@@ -1515,7 +1515,7 @@
   #define USER_GCODE_4 "M140 S" STRINGIFY(PREHEAT_2_TEMP_BED) "\nG28\nG29"
 
   #define USER_DESC_5 "Home & Info"
-  #define USER_GCODE_5 "G28\nM503"
+  #define USER_GCODE_5 "G28\nM503 S0"
 #endif
 
 /**
