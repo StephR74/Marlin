@@ -19,13 +19,13 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
- 
+
  /**
  * JGAurora A5X 3D Printer Firmware v1.1.9
  * Based on v1.1.6 Configuration.h file by: Stéphane RAPIN
  * <https://github.com/StephR74/Marlin-v1.1.9-A5X/>
  *
- * This configuration of Marlin was created by the community for the 
+ * This configuration of Marlin was created by the community for the
  * JGAurora A5X 3D printer community. A BIG thanks to the Marlin developers
  * (Scott & Co) for all their continual hard work!
  * Enjoy, and happy printing! :)
@@ -95,7 +95,7 @@
 // build by the user have been successfully uploaded into firmware.
 #define STRING_CONFIG_H_AUTHOR "(Stéphane RAPIN, JGAurora A5X config)" 				// Who made the changes.
 #define SHOW_BOOTSCREEN
-#define STRING_SPLASH_LINE1 "Marlin v1.1.9 - JGAurora A5X Community Firmware" 	// will be shown during bootup in line 1
+  #define STRING_SPLASH_LINE1 "Marlin v1.1.9 - JGAurora A5X Community Firmware" 	// will be shown during bootup in line 1
 #define STRING_SPLASH_LINE2 "https://www.lesimprimantes3d.fr"         				// will be shown during bootup in line 2
 
 /**
@@ -405,11 +405,11 @@
   //#define DEFAULT_Kp 63.0
   //#define DEFAULT_Ki 2.25
   //#define DEFAULT_Kd 440
-  
-  // JGAurora A5 (tuned at 210°C by Samuel Pinches)
-  #define  DEFAULT_Kp 35.3		// [Need to be adjusted]
-  #define  DEFAULT_Ki 4.35		// [Need to be adjusted]
-  #define  DEFAULT_Kd 71.57	// [Need to be adjusted]
+
+  // JGAurora A5X (tuned at 210°C by Stéphane RAPIN)
+  #define  DEFAULT_Kp 36.05
+  #define  DEFAULT_Ki 3.67
+  #define  DEFAULT_Kd 88.57
 
 #endif // PIDTEMP
 
@@ -448,15 +448,20 @@
 
   //120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   //from FOPDT model - kp=.39 Tp=405 Tdead=66, Tc set to 79.2, aggressive factor of .15 (vs .1, 1, 10)
-  #define DEFAULT_bedKp 10.00
-  #define DEFAULT_bedKi .023
-  #define DEFAULT_bedKd 305.4
+  //#define DEFAULT_bedKp 10.00
+  //#define DEFAULT_bedKi .023
+  //#define DEFAULT_bedKd 305.4
 
   //120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   //from pidautotune
   //#define DEFAULT_bedKp 97.1
   //#define DEFAULT_bedKi 1.41
   //#define DEFAULT_bedKd 1675.16
+
+  // JGAurora A5X (tuned at 60°C by Stéphane RAPIN)
+  #define DEFAULT_bedKp 255.59
+  #define DEFAULT_bedKi 46.56
+  #define DEFAULT_bedKd 350.74
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 #endif // PIDTEMPBED

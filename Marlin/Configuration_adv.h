@@ -788,7 +788,8 @@
  */
 #define LIN_ADVANCE
 #if ENABLED(LIN_ADVANCE)
-  #define LIN_ADVANCE_K 0.22  // Unit: mm compression per 1mm/s extruder speed [Need to be adjusted]
+  #define LIN_ADVANCE_K 0.54  // Unit: mm compression per 1mm/s extruder speed
+                              // JGAurora A5X (tuned by Stéphane RAPIN)
   //#define LA_DEBUG          // If enabled, this will generate debug information output over USB.
 #endif
 
